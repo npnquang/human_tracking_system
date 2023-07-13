@@ -1,0 +1,11 @@
+openvino-dev==2023.0.0
+ultralytics==8.0.132
+filterpy==1.4.5 
+loguru==0.7.0
+pandas==2.0.3
+torch==1.11.0
+torchvision==0.12.0
+lapx==0.5.2
+matplotlib==3.7.2
+psutil==5.9.5
+seaborn==0.11.0

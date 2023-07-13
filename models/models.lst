@@ -1,0 +1,6 @@
+person-reidentification-retail-0287
+person-detection-retail-0013
+
+python multi_camera_multi_target_tracking_demo.py -i 0 --m_detector "D:\\Internship_CoTAI\\src\\models\\intel\\person-detection-retail-0013\\FP16-INT8\\person-detection-retail-0013.xml" --m_reid "D:\\Internship_CoTAI\\src\\models\\intel\\person-reidentification-retail-0287\\FP16-INT8\\person-reidentification-retail-0287.xml" --config "D:\\Internship_CoTAI\\src\\open_model_zoo\\demos\\multi_camera_multi_target_tracking_demo\\python\\configs\\person.py"
+
+    
