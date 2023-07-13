@@ -142,18 +142,18 @@ class CameraThreading:
 
 core = ov.Core()
 yolo = YoLoV8Model(core, "..\\models\\yolov8-det\\yolov8n_with_preprocess.xml", convert_color=True)
-reid = ReidModel(core, "..\\dynamic_input\\reid_0287\\person-reidentification-retail-0267.xml")
+reid = ReidModel(core, "..\\models\\dynamic_input\\reid_0287\\person-reidentification-retail-0267.xml")
 
-roi = np.array([[550, 200], [800, 200],
-            [1000, 500], [800, 500]],
-           np.int32).reshape(-1, 1, 2)
+# roi = np.array([[550, 200], [800, 200],
+#             [1000, 500], [800, 500]],
+#            np.int32).reshape(-1, 1, 2)
 
 tracker = DeepOCSORT(
     embedder=reid,  # which ReID model to use
     device='cpu',  # 'cpu', 'cuda:0', 'cuda:1', ... 'cuda:N'
     fp16=True,  # wether to run the ReID model with half precision or not
     max_age=100 ,
-    roi=roi) 
+    roi=None) 
 
 
 color = (0, 0, 255)  # BGR
