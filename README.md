@@ -1,6 +1,7 @@
 # Introduction
 The project consists of **03** versions of Human Tracking system: `DeepSORT`, `DeepOCSORT` and a version that relies only on `Human Re-identification` model.
 
+The project is part of the Internship Program of [COTAI](https://www.cot.ai/) from 19/06/2023 to 12/07/2023.
 
 # Process Description
 - Flowchart of the `DeepOCSORT` and `DeepSORT` system:
@@ -50,16 +51,29 @@ python deepocsort.py
 to run the `DeepOCSORT` system.
 
 **OR**
+
 ```
 python deepsort.py
 ```
 to run the `DeepSORT` system.
 
 **OR**
+
 ```
 python reid.py
 ```
 to run the `Human Re-identification` system.
 
+# Reference List
 
+- [Human re-identification definition](https://paperswithcode.com/task/person-re-identification#:~:text=or%20image%20sequence.-,It%20involves%20detecting%20and%20tracking%20a%20person%20and%20then%20using,a%20robust%20and%20efficient%20manner.)
+- [Pre-trained models ONNX](https://github.com/onnx/models#body_analysis)
+- [Pre-trained Reidentification models OpenVino](https://docs.openvino.ai/2023.0/omz_models_group_intel.html#reidentification-models)
+- [Pre-trained Object Detection models OpenVINO](https://docs.openvino.ai/2023.0/omz_models_group_intel.html#object-detection-models)
+- [Multi Camera Multi Target Python Demo](https://github.com/openvinotoolkit/open_model_zoo/tree/master/demos/multi_camera_multi_target_tracking_demo/python)
+- [Simple Online and Realtime Tracking (SORT) paper](https://arxiv.org/pdf/1602.00763.pdf)
+- [SORT GitHub](https://github.com/abewley/sort)
+- [DeepSORT paper - arxiv.org](https://arxiv.org/abs/1703.07402)
+- [DeepSORT GitHub](https://github.com/nwojke/deep_sort)
+- [DeepSORT explanation - OpenCV](https://learnopencv.com/understanding-multiple-object-tracking-using-deepsort/)
 
